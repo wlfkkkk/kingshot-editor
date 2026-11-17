@@ -32,7 +32,7 @@ from PySide6.QtWidgets import (QApplication, QCheckBox, QComboBox, QDialog, QFil
 
 APP_NAME = "Kingshot Editor"
 UPDATE_REPO = "wlfkkkk/kingshot-editor"   # public GitHub repo: latest.json + kingshot_editor.py on main = the update
-APP_VERSION = "1.0"      # bump on every release: shown in the ? window, used by the installer
+APP_VERSION = "1.0.1"     # bump on every release: shown in the ? window, used by the installer
 FORMATS = {   # key: (width, height, label)
     "short": (1080, 1920, "YouTube Short · 9:16 (max 3 min)"),
     "tall": (1080, 1920, "YouTube video · 9:16 vertical"),
@@ -2646,6 +2646,9 @@ class Main(QMainWindow):
         b = box.addButton("📁 Open log folder", QMessageBox.ActionRole)
         bt = box.addButton("🧪 Speed test", QMessageBox.ActionRole)
         bu = box.addButton("🔄 Check for updates", QMessageBox.ActionRole)
+        bc = box.button(QMessageBox.Ok)
+        bc.setText("Close")
+        box.setEscapeButton(bc)   # without this the window's X (and Esc) do nothing
         box.exec()
         if box.clickedButton() is bu:
             self._upd_manual = True
