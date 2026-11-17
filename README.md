@@ -4,7 +4,7 @@ A simple, fast video editor for Windows, made for YouTube Shorts and long videos
 
 ## Download
 
-Get the latest installer from the **[Releases page](https://github.com/wlfkkkk/kingshot-editor/releases/latest)**. Download `KingshotEditorSetup.exe` under Assets.
+**[Download KingshotEditorSetup.exe (version 1.0)](https://github.com/wlfkkkk/kingshot-editor/raw/main/KingshotEditorSetup.exe)**
 
 ## Install
 
