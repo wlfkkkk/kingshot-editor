@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.1
+
+- Fixed: the close (X) button and Esc in the **?** window did nothing.
+
 ## 1.0
 First public release.
 
